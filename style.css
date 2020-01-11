@@ -1,0 +1,15 @@
+body {
+    background: #111;
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+#graphic {
+    /* background: white; */
+}

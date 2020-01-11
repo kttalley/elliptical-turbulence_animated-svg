@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+   
+</head>
+
+<body>
+        <svg id="graphic" viewbox='0 0 915 580'>
+                <defs>
+                    <filter id="noise">
+                        <feTurbulence
+                            type="turbulence"
+                            id="turbulence"
+                            baseFrequency="0.1 0.1"
+                            numOctaves="1"
+                            result="turbulence"
+                            seed="50"
+                        />
+                        <feDisplacementMap
+                            in="SourceGraphic"
+                            in2="turbulence"
+                            result="map"
+                            scale="20"
+                            xChannelSelector="A"
+                            yChannelSelector="A"
+                        />
+                    </filter>
+                </defs>
+                <g filter='url(#noise)' fill="none" fill-rule="evenodd" stroke="#CCC" stroke-width="2" transform="translate(1 1)"><circle cx="270.5" cy="270.5" r="270.5"/><circle cx="630.5" cy="270.5" r="270.5"/><circle cx="303.5" cy="270.5" r="270.5"/><circle cx="597.5" cy="270.5" r="270.5"/><circle cx="565.5" cy="270.5" r="270.5"/><circle cx="531.5" cy="270.5" r="270.5"/><circle cx="498.5" cy="270.5" r="270.5"/><circle cx="335.5" cy="270.5" r="270.5"/><circle cx="368.5" cy="270.5" r="270.5"/><circle cx="433.5" cy="270.5" r="270.5"/><circle cx="401.5" cy="270.5" r="270.5"/><circle cx="466.5" cy="270.5" r="270.5"/></g>
+            </svg>
+            <script src="./turbulence.js"></script>
+    <script>
+        
+    </script>
+    
+</body>
+
+</html>
